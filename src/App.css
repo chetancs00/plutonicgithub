@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.m-0 {
+    margin: 0 !important;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .logo {
+    color: #fff;
+    font-size: 20px;
+    float: left;
+    margin-right: 10px;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .content {
+    padding: 10px;
   }
-}
+  
+  .home-wrapper {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: auto;
+    margin-top: 50px;
+  }
+  
+  .search-result {
+    border: 1px solid #f0f0f0;
+    border-radius: 4px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+  }
+  
+  .search-result.isFound {
+    padding: 0;
+    border: none;
+    display: block;
+  }
+  
+  .user-stats-wrapper {
+    margin-top: 15px;
+  }
+  
+  .user-stats {
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .user-stat {
+    display: flex;
+    align-items: center;
+    border: 1px solid #001529;
+  }
+  
+  .stat-icon {
+    height: 100%;
+    font-size: 20px;
+    background: #001529;
+    color: #eee;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+  }
+  
+  .stat-info {
+    padding: 3px 5px;
+    text-align: center;
+    min-width: 50px;
+  }
+  
+  .stat-info .label {
+    font-size: 10px;
+  }
+  
+  .view-full-profile {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  
+
+  
+
+  
